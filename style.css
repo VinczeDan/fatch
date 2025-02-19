@@ -1,15 +1,37 @@
-body {
+body, header {
+    background-color: #2a52be; /* Szebb kék háttér */
+    margin: 0;
+    color: whitesmoke;
+    text-align: center; /* Középre helyezi a h1-et */
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
 }
-.szinezendo_doboz {
+
+.szinezendo_doboz1,
+.szinezendo_doboz2,
+.szinezendo_doboz3 {
     width: 100px;
     height: 100px;
     background-color: green;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* A három négyzetet egymás mellé helyezi és középre igazítja */
+.div-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Távolság a dobozok között */
     margin-top: 20px;
 }
